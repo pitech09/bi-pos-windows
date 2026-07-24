@@ -52,7 +52,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL;    // Defined in the constructor
+    public string $baseURL = 'http://localhost/ospos/public/';    // Defined in the constructor
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -65,7 +65,7 @@ class App extends BaseConfig
      *
      * @var list<string>
      */
-    public array $allowedHostnames = [];
+    public array $allowedHostnames = ['localhost'];
 
     /**
      * --------------------------------------------------------------------------
