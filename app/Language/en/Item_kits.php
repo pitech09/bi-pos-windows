@@ -37,6 +37,6 @@ return [
     "successful_adding"         => "You have successfully added Item Kit",
     "successful_deleted"        => "You have successfully deleted",
     "successful_updating"       => "You have successfully updated Item Kit",
-    "unit_price"                => "",
+    "unit_price"                => "Unit Price",
     "update"                    => "Update Item Kit",
 ];
