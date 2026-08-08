@@ -9,6 +9,7 @@
 use Config\Services;
 
 $request = Services::request();
+$allowed_modules = $allowed_modules ?? [];
 ?>
 
 <!doctype html>
@@ -17,7 +18,7 @@ $request = Services::request();
 <head>
     <meta charset="utf-8">
     <base href="<?= base_url() ?>">
-    <title><?= esc($config['company']) . ' | ' . lang('Common.powered_by') . ' B.I POS ' . esc(config('App')->application_version) ?></title>
+    <title><?= esc($config['company']) . ' | ' . lang('Common.powered_by') . ' BI POS ' . esc(config('App')->application_version) ?></title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <?php $theme = (empty($config['theme']) ? 'flatly' : esc($config['theme'])); ?>
@@ -137,7 +138,7 @@ $request = Services::request();
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand hidden-sm" href="<?= site_url() ?>">OSPOS</a>
+                    <a class="navbar-brand hidden-sm" href="<?= site_url() ?>">BI POS</a>
                 </div>
 
                 <div class="navbar-collapse collapse">
